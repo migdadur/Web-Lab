@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <header>
+        <span>API HOMEWORK - POKEDEX LAB</span>
+        <h1>Pokémon Card Explorer</h1>
+        <p>Search the PokéAPI, Inspect the response, and turn structured data into a trending -card-style interface.</p>
+    </header>
+    <section>
+        <span>Live Search</span>
+        <h2>Find a Pokemon</h2>
+        <form id="form">
+            <input id="input" placeholder="e.g pikachu">
+            <button type="submit" id="clear" class="clear">x</button>
+            <button class="search">Search↗</button>
+        </form>
+        
+        
+        <div>
+        <p>Quick Search:</p>
+        <button class="quicksearch" data-name="Pikachu">Pikachu</button>
+        <button class="quicksearch" data-name="charizard">charizard</button>
+        <button class="quicksearch" data-name="Balbasaur">Balbasaur</button>
+        <button class="quicksearch" data-name="Mewtwo">Mewtwo</button>
+        </div>
+    </section>
+    
+    <p id="status">Loaded Sucessfully</p>
+
+    <section id="result">
+        <div id="placeholder">
+            <h2>Your next discovery is waiting.</h2>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
