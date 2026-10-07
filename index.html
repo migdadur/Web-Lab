@@ -7,44 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div class="container">
     <header>
-        <span>API HOMEWORK - POKEDEX LAB</span>
+        <span class="eyebrow">API HOMEWORK - POKEDEX LAB</span>
         <h1>Pokémon Card Explorer</h1>
         <p>Search the PokéAPI, Inspect the response, and turn structured data into a trending -card-style interface.</p>
     </header>
     <section>
-        <span>Live Search</span>
+        <span class="eyebrow">Live Search</span>
         <h2>Find a Pokemon</h2>
         <form id="form">
-            <input id="input" placeholder="e.g pikachu">
-            <button type="submit" id="clear" class="clear">x</button>
-            <button class="search">Search↗</button>
+            <input id="input" placeholder="e.g pikachu" list="Pokemon-list">
+            <button type="button" id="clear" class="clear">x</button>
+            <button type="submit" class="search">Search↗</button>
+            <datalist id="Pokemon-list"></datalist>
         </form>
         
         
-        <div>
+        <div class="quick">
         <p>Quick Search:</p>
-        <button class="quicksearch" data-name="Pikachu">Pikachu</button>
-        <button class="quicksearch" data-name="charizard">charizard</button>
-        <button class="quicksearch" data-name="Balbasaur">Balbasaur</button>
-        <button class="quicksearch" data-name="Mewtwo">Mewtwo</button>
+        <button type="button" class="quicksearch" data-name="Pikachu">Pikachu</button>
+        <button type="button" class="quicksearch" data-name="Charizard">Charizard</button>
+        <button tupe="button" class="quicksearch" data-name="bulbasaur">Bulbasaur</button>
+        <button type="button" class="quicksearch" data-name="Mewtwo">Mewtwo</button>
         </div>
     </section>
     
-    <p id="status">Loaded Sucessfully</p>
+    <p id="status">Type a name to begin</p>
 
     <section id="result">
         <div id="placeholder">
-            <h2>Your next discovery is waiting.</h2>
+            <h2>Your next discovery is waiting...</h2>
         </div>
     </section>
-
-    <footer>
-
-    </footer>
-
-
     </div>
     <script src="script.js"></script>
 </body>
